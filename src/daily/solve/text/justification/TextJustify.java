@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TextJustify {
+
 	public String[] justify(String[] words, int maxLength) {
 		if(words == null || words.length < 1 || maxLength <= 0) return null;
 		List<String> list = new ArrayList<String>();

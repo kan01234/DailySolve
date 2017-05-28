@@ -14,4 +14,5 @@ public class TextJustifyTest {
 		Assert.assertArrayEquals(null, textJustify.justify(new String[0], 16));
 		Assert.assertArrayEquals(null, textJustify.justify(new String[]{ "This", "is", "an", "example", "of", "text", "justification." }, 0));
 	}
+
 }
