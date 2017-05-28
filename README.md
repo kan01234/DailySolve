@@ -9,8 +9,4 @@ input
 
 output
 
-``["This    is    an", 
-
-"example  of text", 
-
-"justification.  "]``
+``["This    is    an", "example  of text", "justification.  "]``
