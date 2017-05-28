@@ -1,9 +1,7 @@
-package daily.solve.test.justification;
+package daily.solve.text.justification;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import daily.solve.main.justification.TextJustify;
 
 public class TextJustifyTest {
 

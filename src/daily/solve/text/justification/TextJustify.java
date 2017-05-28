@@ -1,4 +1,4 @@
-package daily.solve.main.justification;
+package daily.solve.text.justification;
 
 import java.util.ArrayList;
 import java.util.List;
