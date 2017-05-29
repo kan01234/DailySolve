@@ -8,7 +8,7 @@ public class FibonacciNumberTest {
 	FibonacciNumber fibonacciNumber = new FibonacciNumber();
 
 	@Test
-	public void test0() {
+	public void test() {
 		Assert.assertEquals("-1", fibonacciNumber.calc(-1).toString());
 		Assert.assertEquals("0", fibonacciNumber.calc(0).toString());
 		Assert.assertEquals("1", fibonacciNumber.calc(1).toString());
