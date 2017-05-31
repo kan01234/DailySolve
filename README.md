@@ -11,3 +11,7 @@
 [String Reformatter](https://codefights.com/interview/4e6LZSessGpKPx3uB)
 
 [String Permutations](https://codefights.com/interview/fwMMv4mASRuhxPzcP)
+
+{strstr](https://codefights.com/interview/zRR9siWo5JjNWj3xX)
+
+```23/27 Execution time limit exceeded on test 24: Program exceeded the execution time limit. Make sure that it completes execution in a few seconds for any possible input.```
