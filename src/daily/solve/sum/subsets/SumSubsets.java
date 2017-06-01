@@ -1,59 +1,65 @@
 package daily.solve.sum.subsets;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 public class SumSubsets {
 
 	List<List<Integer>> result;
-	List<Integer> done;
+	List<String> done;
 
 	List<List<Integer>> sumSubsets(int[] arr, int num) {
 		result = new ArrayList<List<Integer>>();
-		done = new ArrayList<Integer>();
+		done = new ArrayList<String>();
 		if (arr.length == 0) {
 			result.add(new ArrayList<Integer>());
 			return result;
 		}
-		// Arrays.sort(arr);
 		List<Integer> nums = new ArrayList<Integer>();
 		for (int i : arr)
 			nums.add(i);
-		sumSubsets(nums, new ArrayList<Integer>(), num, true);
-//		result = result.stream().distinct().collect((Collectors.toList()));
+		for(int i = 0; i < nums.size(); i++) {
+			sumSubsets(nums.subList(i + 1, nums.size()), new ArrayList<Integer>(Arrays.asList(nums.get(i))), num - nums.get(i));
+		}
 		System.out.println(result);
 		return result;
 	}
 
-	void sumSubsets(List<Integer> nums, List<Integer> used, int num, boolean isFirst) {
-		List<Integer> tmp, list;
-		int cur, diff;
+	void sumSubsets(List<Integer> nums, List<Integer> used, int num) {
+		System.out.println("used: " + used);
+		System.out.println("nums: " + nums);
+		System.out.println("num:" + num);
+		System.out.println("done: " + done);
+		System.out.println("result: " + result);
+		System.out.println("--------------------------");
+		Collections.sort(used);
+		if(done.indexOf(used.toString()) >= 0) {
+			System.out.println(used.toString() + " skipp");
+			System.out.println("--------------------------");
+			return;
+		}
+		done.add(used.toString());
+		if (num == 0) {
+			result.add(used);
+			return;
+		} else if (num < 0)
+			return;
+		List<Integer> list;
+		int cur;
 		for (int i = 0; i < nums.size(); i++) {
 			cur = nums.get(i);
-			if (isFirst) {
-				if(done.indexOf(cur) >= 0) continue;
-				else done.add(cur);
-			} else {
-				if(nums.stream().min(Integer::compare).get() > cur) break;
-			}
 			list = new ArrayList<Integer>(used);
-			diff = num - cur;
 			list.add(cur);
-			if (diff == 0) {
-				Collections.sort(list);
-				result.add(list);
-			} else if (diff > 0)
-				sumSubsets(removeFromList(nums, cur), list, diff, false);
+			sumSubsets(removeFromList(nums, i), list, num - cur);
 		}
 	}
 
-	List<Integer> removeFromList(List<Integer> list, Integer i) {
+	List<Integer> removeFromList(List<Integer> list, int i) {
 		List<Integer> clone = new ArrayList<Integer>(list);
 		clone.remove(i);
 		return clone;
 	}
+
 }

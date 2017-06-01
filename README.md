@@ -4,13 +4,13 @@
 
 [Sum of Two](https://codefights.com/interview/qAL6AiSejoJZRNyox)
 
-[Sum in Range](https://codefights.com/interview/HMmEhePg2H6e7sCPo/description)
-
-```11/13 Execution time limit exceeded on test 13: Program exceeded the execution time limit. Make sure that it completes execution in a few seconds for any possible input.```
-
 [String Reformatter](https://codefights.com/interview/4e6LZSessGpKPx3uB)
 
 [String Permutations](https://codefights.com/interview/fwMMv4mASRuhxPzcP)
+
+[Sum in Range](https://codefights.com/interview/HMmEhePg2H6e7sCPo/description)
+
+```11/13 Execution time limit exceeded on test 13: Program exceeded the execution time limit. Make sure that it completes execution in a few seconds for any possible input.```
 
 [strstr](https://codefights.com/interview/zRR9siWo5JjNWj3xX)
 
@@ -18,4 +18,4 @@
 
 [Sum Subsets](https://codefights.com/interview/kEgA4DXcfXuriqGru)
 
-```5/6 Execution time limit exceeded on test 6: Program exceeded the execution time limit. Make sure that it completes execution in a few seconds for any possible input.```
+```8/12 Execution time limit exceeded on test 10: Program exceeded the execution time limit. Make sure that it completes execution in a few seconds for any possible input.```
