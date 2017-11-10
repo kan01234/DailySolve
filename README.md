@@ -19,3 +19,9 @@
 [Sum Subsets](https://codefights.com/interview/kEgA4DXcfXuriqGru)
 
 ```9/12 Execution time limit exceeded on test 10: Program exceeded the execution time limit. Make sure that it completes execution in a few seconds for any possible input.```
+
+[First Duplicate](https://codefights.com/interview-practice/task/pMvymcahZ8dY4g75q)
+
+[First Not Repeating Character](https://codefights.com/interview-practice/task/uX5iLwhc6L5ckSyNC)
+
+[Rotate Image](https://codefights.com/interview-practice/task/5A8jwLGcEpTPyyjTB/description)
