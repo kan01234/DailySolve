@@ -10,8 +10,8 @@ public class SumOfTwoTest {
 	
 	@Test
 	public void test() {
-		Assert.assertEquals(true, sumOfTwo.test(new int[] { 1, 2,3 }, new int[] { 10, 20, 30, 40 }, 42));
-		Assert.assertEquals(false, sumOfTwo.test(new int[] { 1, 2,3 }, new int[] { 10, 20, 30, 40 }, 0));
+		Assert.assertEquals(true, sumOfTwo.sumOfTwo(new int[] { 1, 2, 3 }, new int[] { 10, 20, 30, 40 }, 42));
+		Assert.assertEquals(false, sumOfTwo.sumOfTwo(new int[] { 1, 2, 3 }, new int[] { 10, 20, 30, 40 }, 0));
 	}
 
 }
